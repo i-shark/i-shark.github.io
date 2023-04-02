@@ -114,7 +114,7 @@ if (userData.work) {
     }
 }
 
-if (userData.work) {
+if (userData.work && userData.work.website) {
     url = urlParser(userData.work.website[lang], true);
 }
 

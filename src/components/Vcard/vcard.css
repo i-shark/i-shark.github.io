@@ -44,18 +44,18 @@
     background-position: center;
     display: block;
     float: left;
-    height: 100px;
+    height: 130px;
     margin: auto 0;
-    width: 150px;
+    width: 130px;
 }
 
 .company.company_relax {
-    background-image: url("../../assets/images/companies/relax.png");
+    background-image: url("../../assets/images/companies/relax.jpg");
 }
 
 .main-info {
     float: left;
-    margin: auto 30px;
+    margin: auto 30px auto 15px;
     display: block;
 }
 
