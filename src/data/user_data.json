@@ -1,0 +1,137 @@
+{
+  "timezone": "Europe/Moscow",
+  "first_name": {
+    "en": "Svetlana",
+    "ru": "Светлана"
+  },
+  "middle_name": {
+    "en": "Vladimirovna",
+    "ru": "Владимировна"
+  },
+  "last_name": {
+    "en": "Ignatieva",
+    "ru": "Игнатьева"
+  },
+  "gender": "Female",
+  "birthday": "1980-10-31",
+  "phone": {
+    "country": {
+      "code": "ru",
+      "name": {
+        "en": "Russia",
+        "ru": "Россия"
+      }
+    },
+    "region": {
+      "code": "yaroslavl",
+      "name": {
+        "en": "Yaroslavl region",
+        "ru": "Ярославская область"
+      }
+    },
+    "operator": {
+      "code": "mts",
+      "name": {
+        "en": "MTS",
+        "ru": "МТС"
+      }
+    },
+    "messengers": {
+      "telegram": "Shark_803",
+      "whatsapp": true
+    },
+    "value": {
+      "short": "79159888855",
+      "formatted": "+7 915 988-88-55"
+    }
+  },
+  "emails": [
+    "Shark803@mail.ru"
+  ],
+  "socials": {
+    "vk": "https://vk.com/id94109434",
+    "instagram": "https://www.instagram.com/shark8031"
+  },
+  "work": {
+    "code": "relax",
+    "name": {
+      "en": "Relax-studio on Borovskoye highway",
+      "ru": "Релакс-студия на Боровском шоссе"
+    },
+    "address": {
+      "en": "Moscow, Borovskoe highway, 2k3",
+      "ru": "Москва, Боровское шоссе, 2к3"
+    },
+    "coords": [
+      55.661953,
+      37.422755
+    ],
+    "location": {
+      "country": {
+        "code": "ru",
+        "name": {
+          "en": "Russia",
+          "ru": "Российская Федерация"
+        }
+      },
+      "locality": {
+        "code": "moscow",
+        "name": {
+          "en": "Moscow",
+          "ru": "Москва"
+        }
+      },
+      "street": {
+        "name": {
+          "en": "Borovskoe highway",
+          "ru": "Боровское шоссе"
+        }
+      },
+      "house": {
+        "name": {
+          "en": "2k3",
+          "ru": "дом 2к3"
+        }
+      },
+      "zip_code": "119618",
+      "subway": {
+        "type": "moscow-subway",
+        "name": {
+          "en": "Govorovo",
+          "ru": "Говорово"
+        },
+        "line": {
+          "color": "ffd000",
+          "name": {
+            "en": "yellow line",
+            "ru": "солнцевская линия"
+          },
+          "city": {
+            "en": "Moscow",
+            "ru": "Москва"
+          }
+        },
+        "coords": [
+          55.659338,
+          37.418808
+        ],
+        "route_link": "",
+        "distance": {
+          "time": "",
+          "value": ""
+        }
+      }
+    },
+    "position": {
+      "icon": "local_activity",
+      "name": {
+        "en": "Lead massage therapist",
+        "ru": "Ведущий массажист"
+      }
+    },
+    "website": {
+      "en": "https://vk.com/id94109434",
+      "ru": "https://vk.com/id94109434"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/*
+!/node_exec/
+!/public/
+!/src/
+!/.gitignore
+!/.gitattributes
+!/.browserslistrc
+!/.eslintrc.js
+!/LICENSE
+!/README.md
+!/package.json
+!/package-lock.json
+!/babel.config.js
+!/tsconfig.json
+!/vue.config.js
+!/.env
