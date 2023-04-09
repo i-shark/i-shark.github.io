@@ -54,12 +54,12 @@
   "work": {
     "code": "relax",
     "name": {
-      "en": "Relax-studio on Borovskoye highway",
-      "ru": "Релакс-студия на Боровском шоссе"
+      "en": "Relax-studio Slim Body",
+      "ru": "Релакс-студия «Slim Body»"
     },
     "address": {
       "en": "Moscow, Borovskoe highway, 2k3",
-      "ru": "Москва, Боровское шоссе, 2к3"
+      "ru": "Москва, Боровское шоссе, 2к3, 1-ый подъезд, кв. 10"
     },
     "coords": [
       55.661953,
@@ -90,6 +90,24 @@
         "name": {
           "en": "2k3",
           "ru": "дом 2к3"
+        }
+      },
+      "entrance": {
+        "name": {
+          "en": "1",
+          "ru": "1"
+        }
+      },
+      "floor": {
+        "name": {
+          "en": "1",
+          "ru": "1"
+        }
+      },
+      "flat": {
+        "name": {
+          "en": "10",
+          "ru": "10"
         }
       },
       "zip_code": "119618",
@@ -127,6 +145,10 @@
         "en": "Lead massage therapist",
         "ru": "Ведущий массажист"
       }
+    },
+    "website": {
+      "en": "https://irelax.taplink.ws",
+      "ru": "https://irelax.taplink.ws"
     }
   }
 }

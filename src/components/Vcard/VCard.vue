@@ -15,8 +15,10 @@
               <a class="social" :class="'social_' + social" :href="userData['socials'][social]" :key="'soc-' + social" :title="name" v-if="social in userData['socials'] && userData['socials'][social]"></a>
             </template>
           </span>
-          <share-block/>
-          <span class="head-messengers">
+          <span class="vcard-control">
+              <share-block/>
+          </span>
+          <span class="head-messengers vcard-control">
             <a class="messenger messenger_telegram" :href="telegram_link" :title="translate('write_telegram')" v-if="userData['phone']['messengers']['telegram']"></a>
             <a class="messenger messenger_whatsapp" :href="whatsapp_link" :title="translate('write_whatsapp')" v-if="userData['phone']['messengers']['whatsapp']"></a>
           </span>
@@ -46,11 +48,11 @@
           <div>
             <i class="info-icon material-icons">phone</i>
             <span class="info-label">{{translate("phone")}}:</span>
-            <i :class="'operator operator_' + userData['phone']['operator']['code']" :title="userData['phone']['operator']['name'][language]"></i>
+            <i class="vcard-control" :class="'operator operator_' + userData['phone']['operator']['code']" :title="userData['phone']['operator']['name'][language]"></i>
             <a class="data-value" :href="'tel:+' + userData['phone']['value']['short']" :title="translate('phone_call') + ' ' + userData['phone']['value']['formatted']">{{userData["phone"]["value"]["formatted"]}}</a>
             <i class="material-icons copy-button" :title="translate('copy')"  v-on:click="$copy(userData['phone']['value']['formatted'], 'phone_copied')">content_copy</i>
-            <span class="messenger-separator"></span>
-            <span class="phone-messengers">
+            <span class="messenger-separator vcard-control"></span>
+            <span class="phone-messengers vcard-control">
               <a class="messenger messenger_telegram" :href="telegram_link" :title="translate('write_telegram')" v-if="userData['phone']['messengers']['telegram']"></a>
               <a class="messenger messenger_whatsapp" :href="whatsapp_link" :title="translate('write_whatsapp')" v-if="userData['phone']['messengers']['whatsapp']"></a>
             </span>
@@ -58,7 +60,6 @@
           <div v-if="work">
             <div v-if="work['website']">
               <i class="info-icon material-icons">language</i>
-              <span class="info-label">{{translate("website")}}:</span>
               <a :href="work['website'][language]"> {{work["website"][language]}}</a>
             </div>
 
@@ -95,7 +96,16 @@
         </div>
         <canvas class="qr-code" v-on:click="$copy(qr_content, 'qr_copied')"></canvas>
     </div>
-    <div class="vcard-line">
+    <div class="vcard-line vcard-control">
+        <a class="vcard-link" href="https://mst.link/siluet9">
+            <v-btn class="button-primary text-transform-none" color="success" rounded>
+                <v-icon color="white">event</v-icon>
+                &nbsp;
+                {{translate("book_massage")}}
+            </v-btn>
+        </a>
+    </div>
+    <div class="vcard-line vcard-control">
       <a class="vcard-link" download :href="vcard_link">
         <v-btn class="button-primary text-transform-none" color="white" rounded>
           <i class="info-icon material-icons">person_add</i>

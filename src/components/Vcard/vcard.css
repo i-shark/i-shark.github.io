@@ -457,3 +457,9 @@
         display: none;
     }
 }
+
+@media print {
+    .vcard-control {
+        display: none;
+    }
+}

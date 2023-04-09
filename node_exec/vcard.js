@@ -56,18 +56,6 @@ if (userData.socials?.facebook) {
 }
 
 let itemIndex = 1;
-const vcardLink = `${env["VUE_APP_DOMAIN"]}${env["VUE_APP_PATH"]}`;
-vCard.push(`item${itemIndex}.URL;type=pref:${vcardLink}`);
-vCard.push(`item${itemIndex}.X-ABLabel:Vcard`);
-itemIndex++;
-
-["instagram", "github", "vk"].forEach(social => {
-    if (userData.socials?.[social]) {
-        vCard.push(`item${itemIndex}.URL:${userData.socials[social]}`);
-        vCard.push(`item${itemIndex}.X-ABLabel:${social}`);
-        itemIndex++;
-    }
-});
 
 if (userData.work) {
     const work = userData.work;
@@ -80,12 +68,14 @@ if (userData.work) {
     }
 
     if (work.website) {
-        vCard.push(`URL:${work.website[lang]}`);
+        vCard.push(`item${itemIndex}.URL:${work.website[lang]}`);
+        vCard.push(`item${itemIndex}.X-ABLabel:Официальный сайт`);
+        itemIndex++;
     }
 
     if (work.location) {
         const address = {};
-        ["country", "region", "locality", "street", "house"].forEach(part => {
+        ["country", "region", "locality", "street", "house", "entrance", "flat"].forEach(part => {
             if (work.location[part]) {
                 address[part] = work.location[part]["name"][lang];
             } else {
@@ -99,8 +89,20 @@ if (userData.work) {
             address.zip_code = "";
         }
 
+        if (address?.entrance) {
+            address.entrance = address.entrance + " подъезд";
+        }
+
+        if (address?.floor) {
+            address.floor = address.floor + " этаж";
+        }
+
+        if (address?.flat) {
+            address.flat =  "квартира " + address?.flat;
+        }
+
         if (address.house) {
-            address.street = [address.street, address.house].filter(val => {
+            address.street = [address.street, address.house, address?.entrance, address?.floor, address?.flat].filter(val => {
                 return val ? val : "";
             }).join(", ");
         }
@@ -108,11 +110,37 @@ if (userData.work) {
         vCard.push(`ADR;type=WORK:;;${address.street};${address.locality};${address.region};${address.zip_code};${address.country}`);
         if (work.coords) {
             vCard.push(`GEO:${work.coords[0]},${work.coords[1]}`);
-            vCard.push(`item5.URL:https://yandex.ru/maps/?text=${work.coords[0]},${work.coords[1]}`);
-            vCard.push(`item5.X-ABLabel:Geo`);
+            vCard.push(`item${itemIndex}.URL:https://yandex.ru/maps/?text=${work.coords[0]},${work.coords[1]}`);
+            vCard.push(`item${itemIndex}.X-ABLabel:Geo`);
+            itemIndex++;
         }
     }
 }
+
+const vcardLink = `${env["VUE_APP_DOMAIN"]}${env["VUE_APP_PATH"]}`;
+vCard.push(`item${itemIndex}.URL;type=pref:${vcardLink}`);
+vCard.push(`item${itemIndex}.X-ABLabel:Vcard`);
+itemIndex++;
+
+if (userData?.phone?.messengers?.telegram) {
+    vCard.push(`item${itemIndex}.URL;type=pref:https://t.me/${userData.phone.messengers.telegram}`);
+    vCard.push(`item${itemIndex}.X-ABLabel:Telegram`);
+    itemIndex++;
+}
+
+if (userData?.phone?.messengers?.whatsapp) {
+    vCard.push(`item${itemIndex}.URL;type=pref:https://wa.me/${userData.phone.value.short}`);
+    vCard.push(`item${itemIndex}.X-ABLabel:WhatsApp`);
+    itemIndex++;
+}
+
+["instagram", "github", "vk"].forEach(social => {
+    if (userData.socials?.[social]) {
+        vCard.push(`item${itemIndex}.URL:${userData.socials[social]}`);
+        vCard.push(`item${itemIndex}.X-ABLabel:${social}`);
+        itemIndex++;
+    }
+});
 
 if (userData.work && userData.work.website) {
     url = urlParser(userData.work.website[lang], true);
