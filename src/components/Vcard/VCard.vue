@@ -97,7 +97,7 @@
         <canvas class="qr-code" v-on:click="$copy(qr_content, 'qr_copied')"></canvas>
     </div>
     <div class="vcard-line vcard-control">
-        <a class="vcard-link" href="https://mst.link/siluet9">
+        <a class="vcard-link" href="https://mst.link/siluet9/services?cid=oadpcfv0jnbp59c9huqdbm893p">
             <v-btn class="button-primary text-transform-none" color="success" rounded>
                 <v-icon color="white">event</v-icon>
                 &nbsp;
