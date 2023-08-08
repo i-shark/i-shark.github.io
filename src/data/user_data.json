@@ -49,13 +49,16 @@
     "Shark803@mail.ru"
   ],
   "socials": {
-    "vk": "https://vk.com/club219850100"
+    "vk": "https://vk.com/club219850100",
+    "web": "https://relax-spa.taplink.ws",
+    "maps": "https://yandex.ru/maps/-/C2fqZot"
   },
+  "book_link": "https://b950025.yclients.com/company/883137/select-services?o=",
   "work": {
     "code": "relax",
     "name": {
-      "en": "Relax-studio Slim Body",
-      "ru": "Релакс-студия «Slim Body»"
+      "en": "Relax-studio Magic Massage",
+      "ru": "Релакс-студия «Magic Massage»"
     },
     "address": {
       "en": "Moscow, Borovskoe highway, 2k3",
@@ -143,12 +146,12 @@
       "icon": "local_activity",
       "name": {
         "en": "Lead massage therapist",
-        "ru": "Ведущий массажист"
+        "ru": "Ведущая массажистка"
       }
     },
     "website": {
-      "en": "https://irelax.taplink.ws",
-      "ru": "https://irelax.taplink.ws"
+      "en": "https://magic-massage-borovskoe-shosse.clients.site",
+      "ru": "https://magic-massage-borovskoe-shosse.clients.site"
     }
   }
 }

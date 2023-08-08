@@ -249,8 +249,16 @@
     background-image: url("../../assets/images/socials/vk.png");
 }
 
-.social.social_facebook {
-    background-image: url("../../assets/images/socials/fb.png");
+.social.social_maps {
+    background-image: url("../../assets/images/socials/maps.svg");
+}
+
+.social.social_web {
+    background-image: url("../../assets/images/socials/web.svg");
+}
+
+.social.social_yandex {
+    background-image: url("../../assets/images/socials/ya.png");
 }
 
 .social.social_instagram {
@@ -259,14 +267,6 @@
 
 .social.social_google {
     background-image: url("../../assets/images/socials/google.png");
-}
-
-.social.social_github {
-    background-image: url("../../assets/images/socials/github.png");
-}
-
-.social.social_hh {
-    background-image: url("../../assets/images/socials/hh.svg");
 }
 
 .c-icon {
@@ -459,6 +459,10 @@
 }
 
 @media print {
+    a.social {
+        display: none!important;
+    }
+
     .vcard-control {
         display: none;
     }

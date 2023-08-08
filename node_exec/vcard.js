@@ -98,7 +98,7 @@ if (userData.work) {
         }
 
         if (address?.flat) {
-            address.flat =  "квартира " + address?.flat;
+            address.flat =  "помещение №" + address?.flat;
         }
 
         if (address.house) {
@@ -110,16 +110,19 @@ if (userData.work) {
         vCard.push(`ADR;type=WORK:;;${address.street};${address.locality};${address.region};${address.zip_code};${address.country}`);
         if (work.coords) {
             vCard.push(`GEO:${work.coords[0]},${work.coords[1]}`);
-            vCard.push(`item${itemIndex}.URL:https://yandex.ru/maps/?text=${work.coords[0]},${work.coords[1]}`);
-            vCard.push(`item${itemIndex}.X-ABLabel:Geo`);
-            itemIndex++;
         }
     }
 }
 
+if (userData.book_link) {
+    vCard.push(`item${itemIndex}.URL;type=pref:${userData.book_link}`);
+    vCard.push(`item${itemIndex}.X-ABLabel:Записаться`);
+    itemIndex++;
+}
+
 const vcardLink = `${env["VUE_APP_DOMAIN"]}${env["VUE_APP_PATH"]}`;
 vCard.push(`item${itemIndex}.URL;type=pref:${vcardLink}`);
-vCard.push(`item${itemIndex}.X-ABLabel:Vcard`);
+vCard.push(`item${itemIndex}.X-ABLabel:Визитка`);
 itemIndex++;
 
 if (userData?.phone?.messengers?.telegram) {
@@ -134,10 +137,19 @@ if (userData?.phone?.messengers?.whatsapp) {
     itemIndex++;
 }
 
-["instagram", "github", "vk"].forEach(social => {
+["instagram", "github", "vk", "web", "maps"].forEach(social => {
     if (userData.socials?.[social]) {
         vCard.push(`item${itemIndex}.URL:${userData.socials[social]}`);
-        vCard.push(`item${itemIndex}.X-ABLabel:${social}`);
+        let socialLabel;
+        switch (social) {
+            case "vk": socialLabel = "Вконтакте"; break;
+            case "web": socialLabel = "Сайт"; break;
+            case "maps": socialLabel = "Карты"; break;
+            default: socialLabel = social;
+        }
+
+        vCard.push(`item${itemIndex}.X-ABLabel:${socialLabel}`);
+
         itemIndex++;
     }
 });

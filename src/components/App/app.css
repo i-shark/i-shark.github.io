@@ -129,6 +129,12 @@ a {
 }
 
 @media print {
+    .v-main > .v-main__wrap > .app-content.v-card.v-sheet {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
     body .v-application a,
     a {
         color: #333;
