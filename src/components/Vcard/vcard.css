@@ -195,6 +195,10 @@
     background-image: url("../../assets/images/places/moscow.png");
 }
 
+.location.location_yaroslavl {
+    background-image: url("../../assets/images/places/yaroslavl.png");
+}
+
 .location.location_mosreg {
     background-image: url("../../assets/images/places/mosreg.png");
 }

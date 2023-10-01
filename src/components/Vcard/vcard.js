@@ -99,7 +99,7 @@ export default {
         this.ready = true;
 
         const nameParts = [];
-        ["first_name", "last_name"].forEach(part => {
+        ["first_name", "middle_name"].forEach(part => {
             if (part in this.userData && this.userData[part]) {
                 nameParts.push(this.userData[part][this.language]);
             }

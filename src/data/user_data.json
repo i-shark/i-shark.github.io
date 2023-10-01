@@ -50,10 +50,10 @@
   ],
   "socials": {
     "vk": "https://vk.com/club219850100",
-    "web": "https://relax-spa.taplink.ws",
-    "maps": "https://yandex.ru/maps/-/C2fqZot"
+    "web": "https://best-magic-massage.clients.site",
+    "maps": "https://yandex.ru/maps/-/CDUkFNM~"
   },
-  "book_link": "https://b950025.yclients.com/company/883137/select-services?o=",
+  "book_link": "https://dikidi.net/1285436",
   "work": {
     "code": "relax",
     "name": {
@@ -61,12 +61,12 @@
       "ru": "Релакс-студия «Magic Massage»"
     },
     "address": {
-      "en": "Moscow, Borovskoe highway, 2k3",
-      "ru": "Москва, Боровское шоссе, 2к3, 1-ый подъезд, кв. 10"
+      "en": "Ярославль, улица Республиканская, 7, 4-ый этаж",
+      "ru": "Ярославль, улица Республиканская, 7, 4-ый этаж"
     },
     "coords": [
-      55.661953,
-      37.422755
+      57.637108,
+      39.882829
     ],
     "location": {
       "country": {
@@ -77,28 +77,22 @@
         }
       },
       "locality": {
-        "code": "moscow",
+        "code": "yaroslavl",
         "name": {
-          "en": "Moscow",
-          "ru": "Москва"
+          "en": "Ярославль",
+          "ru": "Ярославль"
         }
       },
       "street": {
         "name": {
-          "en": "Borovskoe highway",
-          "ru": "Боровское шоссе"
+          "en": "Республиканская улица",
+          "ru": "Республиканская улица"
         }
       },
       "house": {
         "name": {
-          "en": "2k3",
-          "ru": "дом 2к3"
-        }
-      },
-      "entrance": {
-        "name": {
-          "en": "1",
-          "ru": "1"
+          "en": "7",
+          "ru": "дом 7"
         }
       },
       "floor": {
@@ -107,40 +101,7 @@
           "ru": "1"
         }
       },
-      "flat": {
-        "name": {
-          "en": "10",
-          "ru": "10"
-        }
-      },
-      "zip_code": "119618",
-      "subway": {
-        "type": "moscow-subway",
-        "name": {
-          "en": "Govorovo",
-          "ru": "Говорово"
-        },
-        "line": {
-          "color": "ffd000",
-          "name": {
-            "en": "yellow line",
-            "ru": "солнцевская линия"
-          },
-          "city": {
-            "en": "Moscow",
-            "ru": "Москва"
-          }
-        },
-        "coords": [
-          55.659338,
-          37.418808
-        ],
-        "route_link": "",
-        "distance": {
-          "time": "",
-          "value": ""
-        }
-      }
+      "zip_code": "150003"
     },
     "position": {
       "icon": "local_activity",
@@ -150,8 +111,8 @@
       }
     },
     "website": {
-      "en": "https://magic-massage-borovskoe-shosse.clients.site",
-      "ru": "https://magic-massage-borovskoe-shosse.clients.site"
+      "en": "https://best-magic-massage.clients.site",
+      "ru": "https://best-magic-massage.clients.site"
     }
   }
 }
