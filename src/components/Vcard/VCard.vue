@@ -73,7 +73,7 @@
               <div>
                 <span :class="'location location_' + work['location']['region']['code']" :title="work['location']['region']['name'][language]" v-if="work['location']['region']"></span>
                 <span :class="'location location_' + work['location']['locality']['code']" :title="work['location']['locality']['name'][language]" v-if="work['location']['locality']"></span>
-                <a :href="getMapLink(work['coords'])" :title="translate('show_on_map')">{{work["address"][language]}}</a>
+                <a class="" :href="getMapLink(work['coords'])" :title="translate('show_on_map')">{{work["address"][language]}}</a>
               </div>
               <div class="subway" v-if="work['location'] && work['location']['subway']">
                 <span :class="'c-icon c-icon_' + work['location']['subway']['type']"></span>

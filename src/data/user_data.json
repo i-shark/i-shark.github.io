@@ -53,7 +53,7 @@
     "web": "https://best-magic-massage.clients.site",
     "maps": "https://yandex.ru/maps/-/CDUkFNM~"
   },
-  "book_link": "https://dikidi.net/1285436",
+  "book_link": "https://dikidi.app/1285436?p=2.pi-po-ssm&o=7",
   "work": {
     "code": "relax",
     "name": {
@@ -61,8 +61,8 @@
       "ru": "Релакс-студия «Magic Massage»"
     },
     "address": {
-      "en": "Ярославль, улица Республиканская, 7, 4-ый этаж",
-      "ru": "Ярославль, улица Республиканская, 7, 4-ый этаж"
+      "en": "Yaroslavl, Respublikanskaya street, building 7, Flagman shopping center, 4th floor, Aquamarine center",
+      "ru": "Ярославль, улица Республиканская, дом 7, 4-ый этаж, центр Аквамарин"
     },
     "coords": [
       57.637108,
@@ -79,13 +79,13 @@
       "locality": {
         "code": "yaroslavl",
         "name": {
-          "en": "Ярославль",
+          "en": "Yaroslavl",
           "ru": "Ярославль"
         }
       },
       "street": {
         "name": {
-          "en": "Республиканская улица",
+          "en": "Republican Street",
           "ru": "Республиканская улица"
         }
       },
@@ -97,8 +97,14 @@
       },
       "floor": {
         "name": {
-          "en": "1",
-          "ru": "1"
+          "en": "4",
+          "ru": "4"
+        }
+      },
+      "flat": {
+        "name": {
+          "en": "Aquamarine center",
+          "ru": "центр Аквамарин"
         }
       },
       "zip_code": "150003"

@@ -75,7 +75,7 @@ if (userData.work) {
 
     if (work.location) {
         const address = {};
-        ["country", "region", "locality", "street", "house", "entrance", "flat"].forEach(part => {
+        ["country", "region", "locality", "street", "house", "entrance", "floor", "flat"].forEach(part => {
             if (work.location[part]) {
                 address[part] = work.location[part]["name"][lang];
             } else {
@@ -95,10 +95,6 @@ if (userData.work) {
 
         if (address?.floor) {
             address.floor = address.floor + " этаж";
-        }
-
-        if (address?.flat) {
-            address.flat =  "помещение №" + address?.flat;
         }
 
         if (address.house) {
